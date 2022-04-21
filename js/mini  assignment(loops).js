@@ -10,11 +10,13 @@
     //      A. It will increment the count by 2 for each loop
     //      B. It will log the value of count to the console on each loop.
 
-    // var count = 0;
+     var count = 0;
 
-    // while (???) {
-    //     //your logic
-    // }
+     while (count >= 10) {
+
+         console.log("count" , count);
+         count +=2
+    }
 
 
     // 2.   Create a while loop that runs until isComplete is equal to true
@@ -22,11 +24,15 @@
     //      B. You will need to create a variable to track your loops progress  (incrementor)
     //      C. Log each iteration and the value of isComplete
 
-    // var isComplete = true;
+     var isComplete = true;
+     var i= 0;
 
-    // while(???) {
-    //     //your  logic
-    // }
+     while(isComplete) {
+        //your  logic
+         if(i=== 20 ) iscomplete = false;
+         i++;
+         console.log(i += )
+     }
 
 
 
@@ -39,17 +45,23 @@
     //      A. It will increment the count by 2 for each loop
     //      B. It will log the value of count to the console on each loop.
 
-    // var incrementor = 0;
-    //
-    // do {
-    //     // your logic
-    // } while(???);
+    var incrementor = 0 ;
+
+    do {
+         // your logic
+
+     } while();
 
 
     // 2.   Create a do-while loop that console logs the number if it's odd.
     //      A. Create a variable called number and increment it by one on each run of the loop.
     //      B. Only print out the value if it's odd.
     //      C. End the loop when the number reaches 50.
+        var number = 0;
+        do{
+              if(number % 2 ===1) console.log("number:" , number)
+            number++;
+        } while( number <= 50);
 
 
 
@@ -60,11 +72,21 @@
     //      A. It will print out the number if it's even.
     //      B. It will print out the number if it's divisible by five evenly.
     //      C. If it's both A and B then it should print out the string "BOTH" instead of the number for that iteration.
+        for (var x = 0; x<100; x++){
+            var isDivisibleBy2
+            console.log(x )
 
+        }
 
     // 2. Create a for loop that runs 50 times with an increment variable starting at zero.
     //     A. Create a variable called total to store the total value of the incrementer.
     //     B. Log the current total  on each loop.
     //     C. Log the sum of all the incrementer values (0+1+2+3….) after the loop has completed.
+        var total= 0;
+        for (var x= 10; x<50; x++){
+    total += x;
+    console.log("subtotal")
+}
 
 
+})();

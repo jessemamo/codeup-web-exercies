@@ -1,4 +1,4 @@
-(function() {
+ (function() {
     "use strict";
 
     /**
@@ -12,12 +12,11 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 var person = {
-    personFirstName: 'Jesse'
-       personLastName: 'Mammosser'
+    firstName: 'Jesse',
+        lastName: 'Mammosser'
     };
-console.log(person)
-    console.log(person.personFirstName)
-    console.log(person.personLastName)
+    console.log(person.firstName)
+    console.log(person.lastName)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -27,7 +26,10 @@ console.log(person)
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+person.sayHello = function(){
+    return 'hello from ' + this.firstName +' '+ this.lastName + '!'
+}
+console.log(person.sayHello())
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -42,11 +44,15 @@ console.log(person)
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+     var shoppers = [
+             {name: 'Cameron', amount: 180},
+             {name: 'Ryan', amount: 250},
+             {name: 'George', amount: 320}
+    ];
+     var discounted = 0;
+     if (shoppers[0].amount > 200) {
+         discounted = shoppers[0].amount * .12
+     }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a

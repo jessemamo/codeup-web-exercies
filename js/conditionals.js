@@ -22,9 +22,9 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColo(colorName){
-return "what color is it?"
-} console.log(analyzeColo())
+function analyzeColor(color){
+if('color')
+} console.log(analyzeColor())
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -101,4 +101,5 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
  })();
