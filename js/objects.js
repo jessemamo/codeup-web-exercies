@@ -49,12 +49,19 @@ console.log(person.sayHello())
              {name: 'Ryan', amount: 250},
              {name: 'George', amount: 320}
     ];
+     for (var i = 0; i < shoppers.length; i += 1) {
      var discounted = 0;
      if (shoppers[0].amount > 200) {
          discounted = shoppers[0].amount * .12
      }
+         function logShoppersMessages(shoppers) {
+             shoppers.forEach(function(shopper) {
+                 console.log(createShopperMessage(shopper));
+             });
+         }
 
-    /** TODO:
+
+         /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -66,7 +73,29 @@ console.log(person.sayHello())
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
+         var books = [
+             {
+                 title: '',
+                 author: {
+                     firstName: '',
+                     lastName: ''
+                 }
+             },
+             {
+                 title: '',
+                 author: {
+                     firstName: '',
+                     lastName: ''
+                 }
+             },
+             {
+                 title: '',
+                 author: {
+                     firstName: '',
+                     lastName: ''
+                 }
+             }
+         ];
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -103,4 +132,4 @@ console.log(person.sayHello())
      *   `showBookInfo` function.
      */
 
-})();
+}})();
