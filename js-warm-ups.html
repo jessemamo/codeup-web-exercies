@@ -22,20 +22,22 @@
 
     // The functionality of displaying any other number in the h1 should be preserved.
 
-    const output = document.querySelector('#output');
-    const input = document.querySelector('#number-input');
-    const numBtn = document.querySelector('#num-btn');
-    numBtn.addEventListener('click', function() {
-
-        if(input.value === 42){
-            //redirect browser to
-            window.location = "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy";
-        }else{
-            output.innerText = input.value;
-        }
-    });
-
-
+    // const output = document.querySelector('#output');
+    // const input = document.querySelector('#number-input');
+    // const numBtn = document.querySelector('#num-btn');
+    // numBtn.addEventListener('click', function() {
+    //
+    //     if(input.value === 42){
+    //         //redirect browser to
+    //         window.location = "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy";
+    //     }else{
+    //         output.innerText = input.value;
+    //     }
+    // });
+    // TODO: Write an arrow function named "highFive" which accepts a string and alerts the user's input, asking for a high five.
+    // Example: highFive("Go") returns "Go, high five!"
+const hignFive = str => alert(`${str}, hign five`);
+hignFive("Go")
 </script>
 
 </body>
